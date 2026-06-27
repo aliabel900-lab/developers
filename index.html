@@ -266,18 +266,75 @@ footer{
     padding:20px;
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
+/* =======================
+   RESPONSIVE DESIGN
+======================= */
+@media (max-width: 768px){
+
+    /* Header */
     header{
         flex-direction:column;
+        align-items:center;
+        padding:15px 20px;
     }
 
     nav{
-        margin-top:10px;
+        margin-top:15px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    nav a{
+        margin:0;
+        font-size:15px;
+    }
+
+    /* Hero */
+    .hero{
+        padding:100px 20px 60px;
+        height:auto;
+        min-height:100vh;
     }
 
     .hero h2{
-        font-size:32px;
+        font-size:36px;
+        line-height:1.3;
+    }
+
+    .hero p{
+        font-size:16px;
+        max-width:100%;
+    }
+
+    .btn{
+        width:100%;
+        max-width:280px;
+    }
+
+    /* Sections */
+    section{
+        padding:70px 20px;
+    }
+
+    .section-title{
+        font-size:28px;
+    }
+
+    .section-subtitle{
+        font-size:16px;
+    }
+
+    /* Contact */
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    /* Cards */
+    .services-grid,
+    .projects-grid{
+        grid-template-columns:1fr;
     }
 }
 
